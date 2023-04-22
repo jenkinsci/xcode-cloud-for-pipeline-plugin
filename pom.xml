@@ -9,10 +9,10 @@
         <relativePath/>
     </parent>
     <groupId>io.jenkins.plugins</groupId>
-    <artifactId>xcodeCloudForJenkins</artifactId>
+    <artifactId>xcode-cloud-for-pipeline</artifactId>
     <version>${revision}${changelist}</version>
     <packaging>hpi</packaging>
-    <name>Xcode Cloud For Jenkins</name>
+    <name>Xcode Cloud For Pipeline</name>
     <description>Plugin for Jenkins to integrate with Xcode Cloud</description>
     <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
     <licenses>
