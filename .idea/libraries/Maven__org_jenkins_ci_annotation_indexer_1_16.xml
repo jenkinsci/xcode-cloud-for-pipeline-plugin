@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Maven: org.jenkins-ci:annotation-indexer:1.16" type="java-imported" external-system-id="Maven">
+    <properties groupId="org.jenkins-ci" artifactId="annotation-indexer" version="1.16" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/annotation-indexer/1.16/annotation-indexer-1.16.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/annotation-indexer/1.16/annotation-indexer-1.16-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/annotation-indexer/1.16/annotation-indexer-1.16-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

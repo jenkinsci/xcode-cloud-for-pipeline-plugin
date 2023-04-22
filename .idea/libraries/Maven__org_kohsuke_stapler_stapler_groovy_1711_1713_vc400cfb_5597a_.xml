@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Maven: org.kohsuke.stapler:stapler-groovy:1711.1713.vc400cfb_5597a_" type="java-imported" external-system-id="Maven">
+    <properties groupId="org.kohsuke.stapler" artifactId="stapler-groovy" version="1711.1713.vc400cfb_5597a_" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/kohsuke/stapler/stapler-groovy/1711.1713.vc400cfb_5597a_/stapler-groovy-1711.1713.vc400cfb_5597a_.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/kohsuke/stapler/stapler-groovy/1711.1713.vc400cfb_5597a_/stapler-groovy-1711.1713.vc400cfb_5597a_-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/kohsuke/stapler/stapler-groovy/1711.1713.vc400cfb_5597a_/stapler-groovy-1711.1713.vc400cfb_5597a_-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -60,7 +60,7 @@
                             <pluginDependencies>
                                 <dependency>
                                     <groupId>io.jenkins.plugins</groupId>
-                                    <artifactId>xcode-cloud-for-jenkins</artifactId>
+                                    <artifactId>xcode-cloud-for-pipeline</artifactId>
                                     <version>${project.version}</version>
                                 </dependency>
                             </pluginDependencies>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Maven: org.jenkins-ci:commons-jelly:1.1-jenkins-20220630" type="java-imported" external-system-id="Maven">
+    <properties groupId="org.jenkins-ci" artifactId="commons-jelly" version="1.1-jenkins-20220630" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/commons-jelly/1.1-jenkins-20220630/commons-jelly-1.1-jenkins-20220630.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/commons-jelly/1.1-jenkins-20220630/commons-jelly-1.1-jenkins-20220630-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/commons-jelly/1.1-jenkins-20220630/commons-jelly-1.1-jenkins-20220630-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Maven: org.jenkins-ci.main:jenkins-test-harness:1903.vf505ecb_63589" type="java-imported" external-system-id="Maven">
+    <properties groupId="org.jenkins-ci.main" artifactId="jenkins-test-harness" version="1903.vf505ecb_63589" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/main/jenkins-test-harness/1903.vf505ecb_63589/jenkins-test-harness-1903.vf505ecb_63589.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/main/jenkins-test-harness/1903.vf505ecb_63589/jenkins-test-harness-1903.vf505ecb_63589-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/main/jenkins-test-harness/1903.vf505ecb_63589/jenkins-test-harness-1903.vf505ecb_63589-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

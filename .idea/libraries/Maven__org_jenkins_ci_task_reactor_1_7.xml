@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Maven: org.jenkins-ci:task-reactor:1.7" type="java-imported" external-system-id="Maven">
+    <properties groupId="org.jenkins-ci" artifactId="task-reactor" version="1.7" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/task-reactor/1.7/task-reactor-1.7.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/task-reactor/1.7/task-reactor-1.7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/task-reactor/1.7/task-reactor-1.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

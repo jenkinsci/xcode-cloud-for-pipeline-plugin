@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Maven: org.fusesource.jansi:jansi:1.11" type="java-imported" external-system-id="Maven">
+    <properties groupId="org.fusesource.jansi" artifactId="jansi" version="1.11" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/fusesource/jansi/jansi/1.11/jansi-1.11.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/fusesource/jansi/jansi/1.11/jansi-1.11-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/fusesource/jansi/jansi/1.11/jansi-1.11-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
