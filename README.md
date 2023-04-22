@@ -1,4 +1,4 @@
-# xcode-cloud-for-jenkins
+# xcode-cloud-for-pipeline
 
 ## Installation
 
