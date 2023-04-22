@@ -27,7 +27,7 @@ pipeline {
         }
         stage('Push to Xcode Cloud') {
             steps {
-                step([$class: 'XcodeCloudForJenkinsBuilder', branchName: '__jenkins_only__'])
+                step([$class: 'XcodeCloudForPipelineBuilder', branchName: '__jenkins_only__'])
             }
         }
     }

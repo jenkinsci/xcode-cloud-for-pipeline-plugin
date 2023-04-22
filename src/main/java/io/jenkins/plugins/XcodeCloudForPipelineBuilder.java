@@ -24,12 +24,12 @@ import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class XcodeCloudForJenkinsBuilder extends Builder implements SimpleBuildStep {
+public class XcodeCloudForPipelineBuilder extends Builder implements SimpleBuildStep {
 
     private final String branchName;
 
     @DataBoundConstructor
-    public XcodeCloudForJenkinsBuilder(String branchName) {
+    public XcodeCloudForPipelineBuilder(String branchName) {
         this.branchName = branchName;
     }
 
