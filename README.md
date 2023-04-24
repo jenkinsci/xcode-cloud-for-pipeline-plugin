@@ -1,4 +1,6 @@
 # xcode-cloud-for-pipeline
+This is a simple Jenkins plugin that allows you to trigger a build on Xcode Cloud from a Jenkins pipeline.
+Triggered during a build step, it will push the current branch to a target branch on Xcode Cloud and trigger a build on that branch.
 
 ## Installation
 
