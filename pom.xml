@@ -42,44 +42,6 @@
             <version>5.13.1.202206130422-r</version>
         </dependency>
     </dependencies>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.jenkins-ci.tools</groupId>
-                <artifactId>maven-hpi-plugin</artifactId>
-                <version>3.6</version>
-                <extensions>true</extensions>
-                <configuration>
-                    <minimumJavaVersion>11</minimumJavaVersion>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>default-cli</id>
-                        <configuration>
-                            <minimumJavaVersion>11</minimumJavaVersion>
-                            <pluginDependencies>
-                                <dependency>
-                                    <groupId>io.jenkins.plugins</groupId>
-                                    <artifactId>xcode-cloud-for-pipeline</artifactId>
-                                    <version>${project.version}</version>
-                                </dependency>
-                            </pluginDependencies>
-                        </configuration>
-                        <phase>generate-resources</phase>
-                    </execution>
-                </executions>
-            </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.19.1</version>
-                <configuration>
-                    <testFailureIgnore>true</testFailureIgnore>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
     <dependencyManagement>
         <dependencies>
             <dependency>
