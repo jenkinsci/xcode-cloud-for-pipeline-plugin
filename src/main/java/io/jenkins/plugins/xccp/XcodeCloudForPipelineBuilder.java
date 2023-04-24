@@ -1,4 +1,4 @@
-package io.jenkins.plugins;
+package io.jenkins.plugins.xccp;
 
 import com.cloudbees.plugins.credentials.CredentialsScope;
 import com.cloudbees.plugins.credentials.common.StandardCredentials;
