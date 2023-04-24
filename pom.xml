@@ -34,24 +34,8 @@
         <jenkins.version>2.361.4</jenkins.version>
         <gitHubRepo>jenkinsci/${project.artifactId}-plugin</gitHubRepo>
     </properties>
-    <dependencies>
-        <dependency>
-            <groupId>org.eclipse.jgit</groupId>
-            <artifactId>org.eclipse.jgit</artifactId>
-            <version>5.13.1.202206130422-r</version>
-        </dependency>
-    </dependencies>
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>org.jenkins-ci.plugins.workflow</groupId>
-                <artifactId>workflow-step-api</artifactId>
-            </dependency>
-            <dependency>
-                <groupId>org.jenkins-ci.plugins</groupId>
-                <artifactId>workflow-cps</artifactId>
-                <version>2.89</version>
-            </dependency>
             <dependency>
                 <groupId>io.jenkins.tools.bom</groupId>
                 <artifactId>bom-2.361.x</artifactId>
@@ -59,15 +43,20 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <dependency>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-server</artifactId>
-                <version>9.4.44.v20210927</version>
-                <scope>provided</scope>
-            </dependency>
         </dependencies>
     </dependencyManagement>
-
+    <dependencies>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>git-client</artifactId>
+            <version>3.7.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>[2.8.6,)</version>
+        </dependency>
+    </dependencies>
     <repositories>
         <repository>
             <id>repo.jenkins-ci.org</id>
