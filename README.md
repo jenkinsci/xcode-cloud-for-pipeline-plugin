@@ -16,8 +16,8 @@ Triggered during a build step, it will push the current branch to a target branc
 pipeline {
     agent any
     environment {
-        GIT_USERNAME="lucas-im"
-        GIT_PASSWORD="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"
+        GIT_USERNAME=credentials('git-username')
+        GIT_PASSWORD=credentials('git-password')
     }
     stages{
         stage('Modify Something') {
