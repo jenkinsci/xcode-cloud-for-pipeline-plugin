@@ -110,7 +110,7 @@ public class XcodeCloudForPipelineBuilder extends Builder implements SimpleBuild
 
             listener.getLogger().println("Deleting branch " + branchName);
             git.push().to(remoteUrl).ref(":refs/heads/" + branchName).execute();
-        } catch (GitException | URISyntaxException e) {
+        } catch (GitException | URISyntaxException | InterruptedException | IOException e) {
             throw new RuntimeException(e);
         }
     }
