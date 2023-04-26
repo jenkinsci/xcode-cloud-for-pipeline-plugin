@@ -88,11 +88,13 @@ public class XcodeCloudForPipelineBuilder extends Builder implements SimpleBuild
             for (FilePath file : files) {
                 FilePath gitignore = file.child(".gitignore");
                 if (gitignore.exists()) {
-                    gitignore.delete();
+                    listener.getLogger().println("Deleting .gitignore file: " + gitignore.getRemote());
+                    gitignore.deleteRecursive();
                 }
             }
             if (workspace.child(".gitignore").exists()) {
-                workspace.child(".gitignore").delete();
+                listener.getLogger().println("Deleting root .gitignore file: " + workspace.child(".gitignore").getRemote());
+                workspace.child(".gitignore").deleteRecursive();
             }
 
             git.branch(branchName);
