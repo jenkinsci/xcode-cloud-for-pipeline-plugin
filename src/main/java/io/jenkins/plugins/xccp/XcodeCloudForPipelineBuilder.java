@@ -77,6 +77,14 @@ public class XcodeCloudForPipelineBuilder extends Builder implements SimpleBuild
             if (remoteBranchExists) {
                 git.push().to(remoteUrl).ref(":refs/heads/" + branchName).execute();
             }
+            
+            List<FilePath> files = workspace.listDirectories();
+            for (FilePath file : files) {
+                FilePath gitignore = file.child(".gitignore");
+                if (gitignore.exists()) {
+                    gitignore.delete();
+                }
+            }
 
             git.branch(branchName);
             git.checkout().ref(branchName).execute();
