@@ -52,6 +52,7 @@ public class XcodeCloudForPipelineBuilder extends Builder implements SimpleBuild
             URIish remoteUrl = new URIish(git.getRemoteUrl("origin"));
             StandardUsernameCredentials credentials =
                     new UsernamePasswordCredentialsImpl(CredentialsScope.GLOBAL, "xcode-cloud", "Xcode Cloud", env.get("GIT_USERNAME"), env.get("GIT_PASSWORD"));
+            git.setRemoteUrl("origin", remoteUrl.toString().replace("https://", "https://" + env.get("GIT_USERNAME") + ":" + env.get("GIT_PASSWORD") + "@"));
             git.setCredentials(credentials);
             git.setAuthor("Jenkins", "null");
             git.setCommitter("Jenkins", "null");
