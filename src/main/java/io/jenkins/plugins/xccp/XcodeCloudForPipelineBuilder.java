@@ -87,7 +87,7 @@ public class XcodeCloudForPipelineBuilder extends Builder implements SimpleBuild
             }
 
             git.branch(branchName);
-            git.checkout().ref(branchName).execute();
+            git.checkout();
             git.add("*");
             git.commit("Created new branch " + branchName);
 
