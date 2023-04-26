@@ -32,10 +32,14 @@ import org.jenkinsci.plugins.gitclient.Git;
 public class XcodeCloudForPipelineBuilder extends Builder implements SimpleBuildStep {
 
     private final String branchName;
+    private final String gitUsername;
+    private final String gitToken;
 
     @DataBoundConstructor
-    public XcodeCloudForPipelineBuilder(String branchName) {
+    public XcodeCloudForPipelineBuilder(String branchName, String gitUsername, String gitToken) {
         this.branchName = branchName;
+        this.gitUsername = gitUsername;
+        this.gitToken = gitToken;
     }
 
     public String getBranchName() {
@@ -50,10 +54,10 @@ public class XcodeCloudForPipelineBuilder extends Builder implements SimpleBuild
 
             GitClient git = Git.with(listener, env).in(workspace).using("git").getClient();
             URIish remoteUrl = new URIish(git.getRemoteUrl("origin"));
-            git.setRemoteUrl("origin", remoteUrl.toString().replace("https://", "https://" + env.get("GIT_USERNAME") + ":" + env.get("GIT_PASSWORD") + "@"));
+            git.setRemoteUrl("origin", remoteUrl.toString().replace("https://", "https://" + gitUsername + ":" + gitToken + "@"));
             remoteUrl = new URIish(git.getRemoteUrl("origin"));
             StandardUsernameCredentials credentials =
-                    new UsernamePasswordCredentialsImpl(CredentialsScope.GLOBAL, "xcode-cloud", "Xcode Cloud", env.get("GIT_USERNAME"), env.get("GIT_PASSWORD"));
+                    new UsernamePasswordCredentialsImpl(CredentialsScope.GLOBAL, "xcode-cloud", "Xcode Cloud", gitUsername, gitToken);
             git.setCredentials(credentials);
             git.setAuthor("Jenkins", "null");
             git.setCommitter("Jenkins", "null");
@@ -86,6 +90,9 @@ public class XcodeCloudForPipelineBuilder extends Builder implements SimpleBuild
                 if (gitignore.exists()) {
                     gitignore.delete();
                 }
+            }
+            if (workspace.child(".gitignore").exists()) {
+                workspace.child(".gitignore").delete();
             }
 
             git.branch(branchName);
