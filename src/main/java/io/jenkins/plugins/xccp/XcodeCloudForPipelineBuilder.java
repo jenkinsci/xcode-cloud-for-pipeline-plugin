@@ -21,7 +21,7 @@ import org.eclipse.jgit.transport.URIish;
 import org.jenkinsci.plugins.gitclient.GitClient;
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.StaplerRequest;
-
+import java.util.List;
 import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
