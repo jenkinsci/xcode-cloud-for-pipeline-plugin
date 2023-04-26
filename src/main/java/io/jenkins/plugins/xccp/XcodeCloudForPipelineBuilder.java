@@ -53,6 +53,7 @@ public class XcodeCloudForPipelineBuilder extends Builder implements SimpleBuild
             StandardUsernameCredentials credentials =
                     new UsernamePasswordCredentialsImpl(CredentialsScope.GLOBAL, "xcode-cloud", "Xcode Cloud", env.get("GIT_USERNAME"), env.get("GIT_PASSWORD"));
             git.setCredentials(credentials);
+            git.setAuthor("Jenkins", "null");
 
             boolean branchExists = false;
             for (Branch branch : git.getBranches()) {
